@@ -1,0 +1,35 @@
+.navlink-single{
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.navbar-cgp{
+    background-color: #ddefff;
+}
+
+.header-cgp{
+    color: #1391ff;
+    background-color: #e8f4ff;
+}
+
+.btn{
+    border-radius: 10rem !important;  
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #1391ff;
+    --bs-btn-border-color: #1391ff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0088ff;
+    --bs-btn-hover-border-color: #0088ff;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #1391ff;
+    --bs-btn-active-border-color: #1391ff; 
+}
+
+.header-img{
+    width: 25rem;
+}
