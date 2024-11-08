@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Card from "../components/Card";
 
 
 const Home = () => {
@@ -19,6 +20,9 @@ const Home = () => {
                                 <img className="header-img" src="assets/images/investing-1.svg"/>
                             </div>
                         </div>
+                    </div>
+                    <div className="col-12 text-center">
+                        <Card/>
                     </div>
                 </div>
             </div>
