@@ -1,8 +1,8 @@
 const Card = () => {
     return (
-        <div className="p-3 bg-white">
+        <div className="p-3 mx-2 bg-white">
             <div>
-                Image Here
+                <img src="https://cgp.lk/img/icon-4.png"/>
             </div>
             <div>
                 Text here text here
