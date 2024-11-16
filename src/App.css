@@ -1,0 +1,144 @@
+/* Custom styles */
+.hero {
+  padding: 120px 0 80px;
+  background: linear-gradient(to bottom right, #fff, #f8f9fa);
+}
+
+.stat-card {
+  transition: transform 0.3s ease;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-warning {
+  background-color: #ffd60a;
+  border-color: #ffd60a;
+  color: #000;
+}
+
+.btn-warning:hover {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #000;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+}
+
+.feature {
+  transition: transform 0.3s ease;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.feature:hover {
+  transform: translateX(10px);
+  background: rgba(255, 214, 10, 0.1);
+}
+
+.automation-image img,
+.insights-image img,
+.create-ads-image img,
+.hero-image img {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+.automation-image img:hover,
+.insights-image img:hover,
+.create-ads-image img:hover,
+.hero-image img:hover {
+  transform: translateY(-10px);
+}
+
+.footer {
+  background-color: #1a1a1a;
+}
+
+.footer a {
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffd60a !important;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.stats {
+  background-color: #f8f9fa;
+  margin-top: -80px;
+  padding-top: 160px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
+    text-align: center;
+  }
+  
+  .hero .btn-group {
+    justify-content: center;
+  }
+  
+  .feature {
+    text-align: left;
+  }
+
+  .navbar .dropdown-menu {
+    border: none;
+    background: transparent;
+    padding-left: 1rem;
+  }
+
+  .navbar .dropdown-item {
+    color: rgba(0,0,0,.55);
+  }
+
+  .navbar .dropdown-item:hover {
+    background: transparent;
+    color: rgba(0,0,0,.7);
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .stats {
+    margin-top: -60px;
+    padding-top: 120px;
+  }
+}
+
+/* Additional responsive improvements */
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .display-5 {
+    font-size: 2rem;
+  }
+  
+  .lead {
+    font-size: 1.1rem;
+  }
+  
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
