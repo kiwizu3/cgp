@@ -2,11 +2,12 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
+import About from './components/About';
 import Automation from './components/Automation';
+import Why from './components/Why';
 import Insights from './components/Insights';
 import CreateAds from './components/CreateAds';
 import Footer from './components/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Test from './components/Test';
 
@@ -18,9 +19,10 @@ function App() {
         {/* <Test color="primary"/> */}
         <Hero />
         <Stats />
-        <Automation />
-        <Insights />
-        <CreateAds />
+        <About/>
+        <Why />
+        {/* <Insights />
+        <CreateAds /> */}
         <Footer />
       </main>
     </div>

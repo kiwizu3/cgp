@@ -25,7 +25,6 @@ function Automation() {
                 <p className="text-muted">Explore Strategies — pre-built automations</p>
               </div>
             </div>
-            <a href="#" className="btn btn-link text-primary ps-0">Learn about Automation →</a>
           </div>
           <div className="col-lg-6">
             <div className="automation-image p-4">

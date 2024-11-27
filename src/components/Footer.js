@@ -7,10 +7,10 @@ function Footer() {
       <div className="container">
         <div className="row mb-5">
           <div className="col-12 text-center">
-            <h2 className="display-5 fw-bold mb-4">Get started now</h2>
+            <h2 className="display-5 fw-bold mb-4">Invest today</h2>
             <p className="lead mb-4">Automate campaign management. Automate growth.</p>
             <div className="d-flex gap-3 justify-content-center">
-              <button className="btn btn-warning px-4 py-2">Try for free</button>
+              <button className="btn btn-primary px-4 py-2">Contact Us</button>
               <button className="btn btn-outline-light px-4 py-2">Book a Demo</button>
             </div>
           </div>
@@ -18,28 +18,24 @@ function Footer() {
         <hr className="my-5" />
         <div className="row">
           <div className="col-md-3 mb-4">
-            <h5 className="mb-3">Product</h5>
+            <h5 className="mb-3">About Us</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-light text-decoration-none">Automation</a></li>
-              <li><a href="#" className="text-light text-decoration-none">Analysis</a></li>
-              <li><a href="#" className="text-light text-decoration-none">Launching</a></li>
-              <li><a href="#" className="text-light text-decoration-none">Pricing</a></li>
+              <li><a href="#" className="text-light text-decoration-none">Our Offices</a></li>
+              <li><a href="#" className="text-light text-decoration-none">The team</a></li>
             </ul>
           </div>
           <div className="col-md-3 mb-4">
-            <h5 className="mb-3">Company</h5>
+            <h5 className="mb-3">Our Approach</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-light text-decoration-none">About us</a></li>
-              <li><a href="#" className="text-light text-decoration-none">Careers</a></li>
-              <li><a href="#" className="text-light text-decoration-none">Blog</a></li>
+              <li><a href="#" className="text-light text-decoration-none">Vision & Mission</a></li>
+              <li><a href="#" className="text-light text-decoration-none">The Approach</a></li>
             </ul>
           </div>
           <div className="col-md-3 mb-4">
             <h5 className="mb-3">Resources</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-light text-decoration-none">Help center</a></li>
-              <li><a href="#" className="text-light text-decoration-none">Case studies</a></li>
-              <li><a href="#" className="text-light text-decoration-none">Privacy program</a></li>
+              <li><a href="#" className="text-light text-decoration-none">Portfolio</a></li>
+              <li><a href="#" className="text-light text-decoration-none">Blog</a></li>
             </ul>
           </div>
           <div className="col-md-3 mb-4">
