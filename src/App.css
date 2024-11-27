@@ -5,6 +5,9 @@
 }
 
 .stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: transform 0.3s ease;
   background: white;
   border-radius: 10px;
@@ -29,7 +32,7 @@
 
 .navbar {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 
 .feature {
@@ -40,8 +43,24 @@
 
 .feature:hover {
   transform: translateX(10px);
-  background: rgba(255, 214, 10, 0.1);
+  background: #112d422f;
 }
+
+.automation-image {
+  position: sticky;
+  top: 0; /* Sticks the image to the top as you scroll */
+  z-index: 10; /* Ensures the image stays on top of the text */
+  max-height: 100vh; /* Ensure the image doesn't stretch too large */
+  transition: all 0.3s ease-in-out;
+}
+
+.selected-feature {
+  background-color: #112d421b;
+  /* border-left: 4px solid var(--bs-primary); */
+  /* padding-left: 10px; */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
 
 .automation-image img,
 .insights-image img,
@@ -70,7 +89,7 @@
 }
 
 .footer a:hover {
-  color: #ffd60a !important;
+  color: var(--bs-secondary) !important;
 }
 
 section {
@@ -79,8 +98,8 @@ section {
 
 .stats {
   background-color: #f8f9fa;
-  margin-top: -80px;
-  padding-top: 160px;
+  margin-top: -5rem;
+  padding-top: 10rem;
 }
 
 /* Responsive styles */

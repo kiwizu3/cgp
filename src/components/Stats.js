@@ -1,22 +1,23 @@
 import React from 'react';
 
-function Stats() {
+const  Stats = () => {
   const stats = [
     {
-      value: '76%',
-      label: 'decrease in campaign management time',
-      story: 'Read story'
+      title: 'Qualified Team',
+      image: 'team.png',
     },
     {
-      value: '6 HRS',
-      label: 'saved per day on ad management',
-      story: 'Read story'
+      title: 'Individual Approach',
+      image: 'approach.png',
     },
     {
-      value: '1,160%',
-      label: 'increase in lead sales',
-      story: 'Read story'
-    }
+      title: '100% Success',
+      image: 'success.png',
+    },
+    {
+      title: '100% Satisfaction',
+      image: 'satisfaction.png',
+    },
   ];
 
   return (
@@ -24,13 +25,13 @@ function Stats() {
       <div className="container">
         <div className="row justify-content-center g-4">
           {stats.map((stat, index) => (
-            <div key={index} className="col-md-4">
-              <div className="stat-card p-4 h-100">
-                <h2 className="display-5 fw-bold text-center mb-3">{stat.value}</h2>
-                <p className="text-center mb-2">{stat.label}</p>
-                <div className="text-center">
+            <div key={index} className="col-md-3">
+              <div className="stat-card shadow p-4 h-100">
+                <img className='p-3' width="100" src={`assets/icons/${stat.image}`}/>
+                <p className="text-center fw-bold">{stat.title}</p>
+                {/* <div className="text-center">
                   <a href="#" className="text-primary text-decoration-none">{stat.story}</a>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
