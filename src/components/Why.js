@@ -70,7 +70,7 @@ const Why = () => {
                             <h2 className="display-6 fw-bold mb-4">Why Capital Growth Partners?</h2>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    {/* <div className="col-lg-6">
                         <div className="automation-image p-4">
                             <img
                                 src={whyus[selected]?.image}
@@ -78,21 +78,19 @@ const Why = () => {
                                 className="img-fluid rounded shadow-lg"
                             />
                         </div>
-                    </div>
-                    <div className="col-lg-6 mb-4 mb-lg-0">
-                        <div className="features">
+                    </div> */}
+                    {/* <div className=" features"> */}
                             {whyus.map((item, index) => (
                                 <div
                                     key={index}
-                                    className={`feature ${selected === index ? 'selected-feature' : ''}`}
+                                    className={`col-lg-4 mb-4 mb-lg-0 feature ${selected === index ? 'selected-feature' : ''}`}
                                     onClick={() => onSelectWhy(index)}
                                 >
                                     <h5 className="mb-0">{item.title}</h5>
                                     {selected === index && <p className="text-muted mb-0">{item.description}</p>}
                                 </div>
                             ))}
-                        </div>
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
         </section>
