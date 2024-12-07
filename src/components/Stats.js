@@ -4,19 +4,19 @@ const  Stats = () => {
   const stats = [
     {
       title: 'Qualified Team',
-      image: 'team.png',
+      image: 'team.svg',
     },
     {
       title: 'Individual Approach',
-      image: 'approach.png',
+      image: 'approach.svg',
     },
     {
       title: '100% Success',
-      image: 'success.png',
+      image: 'success.svg',
     },
     {
       title: '100% Satisfaction',
-      image: 'satisfaction.png',
+      image: 'satisfaction.svg',
     },
   ];
 
