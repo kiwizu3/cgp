@@ -67,7 +67,7 @@ const Why = () => {
                     <div className="col-12 d-flex flex-column align-items-center">
                         <div>
                             <p className="title-tops">Consulting Services</p>
-                            <h2 className="display-6 fw-bold mb-4">Why Capital Growth Partners?</h2>
+                            <h2 className="display-7 fw-bold mb-4">Why Capital Growth Partners?</h2>
                         </div>
                     </div>
                     {/* <div className="col-lg-6">

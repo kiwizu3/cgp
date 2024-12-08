@@ -19,7 +19,7 @@ const About = () => {
                     <div className="col-lg-6">
                         <div className="about-description p-4">
                             <p className="title-tops">Learn About Us</p>
-                            <h2 className="display-6 fw-bold mb-4">Years of Experience</h2>
+                            <h2 className="display-7 fw-bold mb-4">Years of Experience</h2>
                             <p className="text-muted">
                             At Capital Growth Partners, we are dedicated to unlocking the full potential of your investments. Based in Sri Lanka, our mission is to create unparalleled investment opportunities that pave the way for sustainable financial growth. We specialize in identifying and capitalizing on unique market prospects, offering a platform for both individual investors and companies eager to invest and expand. With a focus on long-term growth, we employ strategic investment approaches tailored to your financial aspirations.
                             </p>
