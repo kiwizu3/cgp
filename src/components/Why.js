@@ -58,7 +58,7 @@ const Why = () => {
                 <div className="row align-items-center">
                     <div className="col-12 text-center mb-4">
                         <p className="title-tops">Consulting Services</p>
-                        <h2 className="display-7 fw-bold">Why Capital Growth Partners?</h2>
+                        <h2 className="display-7">Why Capital Growth Partners?</h2>
                     </div>
                     {whyus.map((item, index) => (
                         <div key={index} className="col-lg-4 mb-4">

@@ -40,6 +40,18 @@
   color: #000;
 }
 
+.btn-primary:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-success);
+  border-color: var(--bs-success);
+}
+
+.btn-primary:active {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-success) !important;
+  border-color: var(--bs-success) !important;
+}
+
 .navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   /* padding: 1rem 0; */
@@ -109,7 +121,7 @@
   color: var(--bs-secondary) !important;
 }
 
-.footer-logo{
+.footer-logo {
   width: 10rem;
 }
 
@@ -198,6 +210,6 @@ section {
   background-image: url('./assets/images/bg-0.jpg');
 }
 
-.whyus-icon{
+.whyus-icon {
   color: var(--bs-success);
 }
