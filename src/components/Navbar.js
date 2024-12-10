@@ -3,10 +3,16 @@ import './Navbar.css'; // Ensure this imports your CSS
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+
+      setIsScrolled(scrollTop > 0);
+      setScrollProgress(progress);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -21,9 +27,15 @@ function Navbar() {
         isScrolled ? 'navbar-light bg-white shadow' : 'navbar-dark navbar-transparent'
       } fixed-top`}
     >
+      <div
+        className="scroll-progress-bar"
+        style={{
+          width: `${scrollProgress}%`,
+        }}
+      ></div>
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img src={`assets/images/logo.${isScrolled?"png":"jpg"}`} alt="Logo" height="50" />
+          <img src={`assets/images/logo.${isScrolled ? 'png' : 'jpg'}`} alt="Logo" height="50" />
         </a>
         <button
           className="navbar-toggler"

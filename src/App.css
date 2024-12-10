@@ -19,8 +19,8 @@
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  width: 15rem;
-  height: 15rem !important;
+  width: 12rem;
+  height: 12rem !important;
   border-bottom: var(--bs-success) 4px solid !important;
 }
 
@@ -94,8 +94,8 @@
 }
 
 .footer {
-  border-top: var(--bs-primary) 5px solid;
-  border-radius: 2rem;
+  /* border-top: var(--bs-primary) 5px solid; */
+  border-radius: 3rem;
   color: #000 !important;
   background-color: #f8f9fa !important;
 }
