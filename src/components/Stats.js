@@ -25,9 +25,9 @@ const  Stats = () => {
       <div className="container">
         <div className="row justify-content-center g-4">
           {stats.map((stat, index) => (
-            <div key={index} className="col-lg-3 col-md-3 col-sm-12">
+            <div key={index} className="col-lg-3 col-md-6 col-sm-12">
               <div className="stat-card mx-auto shadow p-4 h-100">
-                <img className='p-3' width="100" src={`assets/icons/${stat.image}`}/>
+                <img width="100" src={`assets/icons/${stat.image}`}/>
                 <p className="text-center fw-bold">{stat.title}</p>
                 {/* <div className="text-center">
                   <a href="#" className="text-primary text-decoration-none">{stat.story}</a>
