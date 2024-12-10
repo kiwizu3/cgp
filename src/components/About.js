@@ -9,7 +9,7 @@ const About = () => {
                     <div className="col-lg-6">
                         <div className="about-image p-4">
                             <img
-                                src="https://placehold.co/800x600?text=About+Us"
+                                src="/assets/images/about.png"
                                 alt="About Us"
                                 className="img-fluid rounded shadow-lg"
                             />

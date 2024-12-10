@@ -14,10 +14,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease;
   background: white;
   border-radius: 10px;
   overflow: hidden;
+  width: 15rem;
+  height: 15rem !important;
+  border-bottom: var(--bs-success) 4px solid !important;
 }
 
 .stat-card:hover {
@@ -90,15 +94,23 @@
 }
 
 .footer {
-  background-color: #1a1a1a;
+  border-top: var(--bs-primary) 5px solid;
+  border-radius: 2rem;
+  color: #000 !important;
+  background-color: #f8f9fa !important;
 }
 
 .footer a {
   transition: color 0.3s ease;
+  color: #3c3c3c !important;
 }
 
 .footer a:hover {
   color: var(--bs-secondary) !important;
+}
+
+.footer-logo{
+  width: 10rem;
 }
 
 section {
@@ -114,7 +126,7 @@ section {
 /* Responsive styles */
 @media (max-width: 768px) {
   .hero {
-    padding: 100px 0 60px;
+    /* padding: 100px 0 60px; */
     text-align: center;
   }
 
@@ -184,4 +196,8 @@ section {
 
 .bg-1 {
   background-image: url('./assets/images/bg-0.jpg');
+}
+
+.whyus-icon{
+  color: var(--bs-success);
 }
