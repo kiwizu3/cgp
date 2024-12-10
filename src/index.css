@@ -38,9 +38,9 @@ body {
   font-family: "Oooh Baby", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5rem;
-  margin-bottom: -1rem;
-  color: #112d42;
+  font-size: 2rem;
+  margin-bottom: -1.25rem;
+  color: var(--bs-success);
 }
 
 h1 {

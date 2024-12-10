@@ -4,19 +4,19 @@ const  Stats = () => {
   const stats = [
     {
       title: 'Qualified Team',
-      image: 'team.png',
+      image: 'team.svg',
     },
     {
       title: 'Individual Approach',
-      image: 'approach.png',
+      image: 'approach.svg',
     },
     {
       title: '100% Success',
-      image: 'success.png',
+      image: 'success.svg',
     },
     {
       title: '100% Satisfaction',
-      image: 'satisfaction.png',
+      image: 'satisfaction.svg',
     },
   ];
 
@@ -25,8 +25,8 @@ const  Stats = () => {
       <div className="container">
         <div className="row justify-content-center g-4">
           {stats.map((stat, index) => (
-            <div key={index} className="col-md-3">
-              <div className="stat-card shadow p-4 h-100">
+            <div key={index} className="col-lg-3 col-md-3 col-sm-12">
+              <div className="stat-card mx-auto shadow p-4 h-100">
                 <img className='p-3' width="100" src={`assets/icons/${stat.image}`}/>
                 <p className="text-center fw-bold">{stat.title}</p>
                 {/* <div className="text-center">
