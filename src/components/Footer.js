@@ -7,11 +7,11 @@ function Footer() {
       <div className="container">
         <div className="row mb-5">
           <div className="col-12 text-center">
-            <img className="footer-logo" src="assets/images/logo.png" alt="Logo" />
-            <p className="lead mb-4">Automate campaign management. Automate growth.</p>
+            <img className="footer-logo mb-4" src="assets/images/logo.png" alt="Logo" />
+            {/* <p className="lead mb-4">Automate campaign management. Automate growth.</p> */}
             <div className="d-flex gap-3 justify-content-center">
               <button className="btn btn-primary px-4 py-2">Contact Us</button>
-              <button className="btn btn-outline-primary px-4 py-2">Book a Demo</button>
+              {/* <button className="btn btn-outline-primary px-4 py-2">Book a Demo</button> */}
             </div>
           </div>
         </div>
