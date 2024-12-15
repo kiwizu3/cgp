@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaGoogle, FaSnapchatGhost } from 'react-icons/fa';
 
 function Footer() {
@@ -11,7 +12,9 @@ function Footer() {
       <div className="container">
         <div className="row mb-5">
           <div className="col-12 text-center">
-            <img className="footer-logo mb-4" src="assets/images/logo.png" alt="Logo" />
+            <Link to="/">
+              <img className="footer-logo mb-4" src="assets/images/logo.png" alt="Logo" />
+            </Link>
             <div className="d-flex gap-3 justify-content-center">
               <button className="btn btn-primary px-4 py-2">Contact Us</button>
             </div>
@@ -37,17 +40,17 @@ function Footer() {
         <hr className="my-5" />
         <div className="row">
           <div className="col-md-3 mb-4">
-            <h5 className="mb-3">About Us</h5>
+            <h5 className="mb-3">About</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-light text-decoration-none">
-                  Our Offices
-                </a>
+                <Link to="/about" className="text-light text-decoration-none">
+                  About Us
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-light text-decoration-none">
+                <Link to="#" className="text-light text-decoration-none">
                   The Team
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -55,14 +58,14 @@ function Footer() {
             <h5 className="mb-3">Our Approach</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-light text-decoration-none">
+                <Link to="#" className="text-light text-decoration-none">
                   Vision & Mission
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-light text-decoration-none">
+                <Link to="#" className="text-light text-decoration-none">
                   The Approach
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -70,14 +73,14 @@ function Footer() {
             <h5 className="mb-3">Resources</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-light text-decoration-none">
+                <Link to="#" className="text-light text-decoration-none">
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-light text-decoration-none">
+                <Link to="#" className="text-light text-decoration-none">
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -29,3 +29,18 @@
     transition: width 0.1s ease-in-out;
     z-index: 1000; /* Ensure it appears above other elements */
   }
+
+
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0 !important;
+}
+
+button:hover {
+  border-color: #00000000 !important;
+}
+
+.bi-navbar{
+  font-size: 2rem;
+}

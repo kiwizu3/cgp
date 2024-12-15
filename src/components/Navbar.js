@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import './Navbar.css'; // Ensure this imports your CSS
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); // State for scroll position
+  const [isExpanded, setIsExpanded] = useState(false); // State for menu toggle
   const [scrollProgress, setScrollProgress] = useState(0);
 
+  // Scroll event to handle navbar transparency and progress bar
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const progress = (scrollTop / docHeight) * 100;
 
-      setIsScrolled(scrollTop > 0);
+      setIsScrolled(scrollTop > 0); // Navbar turns background when scrolled
       setScrollProgress(progress);
     };
 
@@ -21,12 +24,18 @@ function Navbar() {
     };
   }, []);
 
+  // Handle navbar collapse toggle
+  const handleToggle = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  // Determine navbar class based on scroll and expanded state
+  const navbarClass = `navbar navbar-expand-lg fixed-top ${
+    isScrolled || isExpanded ? 'navbar-light bg-white shadow' : 'navbar-dark navbar-transparent'
+  }`;
+
   return (
-    <nav
-      className={`navbar navbar-expand-lg ${
-        isScrolled ? 'navbar-light bg-white shadow' : 'navbar-dark navbar-transparent'
-      } fixed-top`}
-    >
+    <nav className={navbarClass}>
       <div
         className="scroll-progress-bar"
         style={{
@@ -34,22 +43,19 @@ function Navbar() {
         }}
       ></div>
       <div className="container">
-        <a className="navbar-brand" href="#">
-          <img src={`assets/images/logo.${isScrolled ? 'png' : 'jpg'}`} alt="Logo" height="50" />
-        </a>
+        <Link className="navbar-brand" to="/">
+          <img src={`assets/images/logo.${isScrolled || isExpanded ? 'png' : 'jpg'}`} alt="Logo" height="50" />
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          onClick={handleToggle} // Controlled toggle button
+          aria-expanded={isExpanded}
         >
-          <span className="navbar-toggler-icon"></span>
+          {isExpanded ? (<i className="bi-navbar bi bi-x"></i>) : (<i className="bi-navbar bi bi-list"></i>)}
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav me-auto">
+        <div className={`collapse navbar-collapse py-4 ${isExpanded ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav me-auto mb-4">
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -58,13 +64,13 @@ function Navbar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                About Us
+                About
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Our Offices
-                  </a>
+                  <Link className="dropdown-item" to="/about">
+                    About Us
+                  </Link>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
@@ -97,20 +103,20 @@ function Navbar() {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/">
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="#">
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="d-flex flex-column flex-lg-row gap-2">
-            <a href="#" className="btn btn-primary">
+            <Link to="#" className="btn btn-primary">
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>
