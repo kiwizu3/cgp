@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
@@ -8,23 +8,30 @@ import Why from './components/Why';
 import Insights from './components/Insights';
 import CreateAds from './components/CreateAds';
 import Footer from './components/Footer';
+import AboutPage from './pages/AboutPage'; // Import your AboutPage here
 import './App.css';
-import Test from './components/Test';
 
 function App() {
   return (
     <div className="app">
       <Navbar />
+      <Hero />
       <main>
-        {/* <Test color="primary"/> */}
-        <Hero />
-        <Stats />
-        <About/>
-        <Why />
-        {/* <Insights />
-        <CreateAds /> */}
-        <Footer />
+        <Routes>
+          {/* Define your routes */}
+          <Route path="/" element={
+            <>
+             
+              <Stats />
+              <About />
+              <Why />
+            </>
+          } />
+          <Route path="/about" element={<AboutPage />} />
+          {/* Add more routes as needed */}
+        </Routes>
       </main>
+      <Footer />
     </div>
   );
 }
