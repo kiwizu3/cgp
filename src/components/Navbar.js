@@ -54,8 +54,8 @@ function Navbar() {
         >
           {isExpanded ? (<i className="bi-navbar bi bi-x"></i>) : (<i className="bi-navbar bi bi-list"></i>)}
         </button>
-        <div className={`collapse navbar-collapse py-4 ${isExpanded ? 'show' : ''}`} id="navbarNav">
-          <ul className="navbar-nav me-auto mb-4">
+        <div className={`collapse navbar-collapse ${isExpanded ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav ms-auto me-3">
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -64,17 +64,17 @@ function Navbar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                About
+                ABOUT
               </a>
               <ul className="dropdown-menu">
                 <li>
                   <Link className="dropdown-item" to="/about">
-                    About Us
+                    ABOUT US
                   </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    The Team
+                  <a className="dropdown-item" href="#team">
+                    THE TEAM
                   </a>
                 </li>
               </ul>
@@ -87,7 +87,7 @@ function Navbar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Our Approach
+                OUR APPROACH
               </a>
               <ul className="dropdown-menu">
                 <li>
@@ -104,18 +104,18 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/">
-                Portfolio
+                PORTFOLIO
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="#">
-                Blog
+                BLOG
               </Link>
             </li>
           </ul>
           <div className="d-flex flex-column flex-lg-row gap-2">
             <Link to="#" className="btn btn-primary">
-              Contact Us
+              CONTACT US
             </Link>
           </div>
         </div>

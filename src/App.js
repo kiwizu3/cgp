@@ -10,6 +10,7 @@ import CreateAds from './components/CreateAds';
 import Footer from './components/Footer';
 import AboutPage from './pages/AboutPage'; // Import your AboutPage here
 import './App.css';
+import Team from './components/Team';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Stats />
               <About />
               <Why />
+              <Team />
             </>
           } />
           <Route path="/about" element={<AboutPage />} />

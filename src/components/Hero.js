@@ -37,7 +37,7 @@ const Hero = () => {
               >
                 <div className="container d-flex justify-content-center align-items-center h-100">
                   <div className="text-center text-white">
-                    <h1 className="display-4 fw-bold mb-4">{title}</h1>
+                    <h1 className="display-4 fw-bold mb-4 text-uppercase">{title}</h1>
                     <p className="lead mb-4">{subtitle}</p>
                     <div className="d-flex gap-3 justify-content-center">
                       <button className="btn btn-primary px-4 py-2">{actionBtn}</button>
