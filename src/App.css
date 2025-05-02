@@ -241,3 +241,27 @@ section {
   z-index: 1;
   position: relative;
 }
+
+.card-columns-custom {
+  column-count: 1;
+  column-gap: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .card-columns-custom {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns-custom {
+    column-count: 3;
+  }
+}
+
+.card-columns-custom .card {
+  display: inline-block;
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
