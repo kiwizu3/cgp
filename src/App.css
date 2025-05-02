@@ -214,33 +214,30 @@ section {
   color: var(--bs-success);
 }
 
-.timeline {
+.step-card {
+  background: #fff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
   position: relative;
-  margin-left: 20px;
-  border-left: 3px solid #dee2e6;
-  padding-left: 20px;
 }
 
-.timeline-step {
-  position: relative;
-  margin-bottom: 2.5rem;
+.step-card:hover {
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
-.timeline-dot {
+.step-number {
   position: absolute;
-  left: -32px;
-  top: 3rem;
-  width: 20px;
-  height: 20px;
-  background-color: var(--bs-primary); 
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 0 0 2px var(--bs-primary)
+  top: 12px;
+  right: 16px;
+  font-size: 48px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.05);
+  z-index: 0;
 }
 
-.timeline-content {
-  padding-left: 10px;
-  border: 1px solid black;
-  border-radius: 10rem;
-  padding: 1rem;
+.step-icon {
+  font-size: 28px;
+  z-index: 1;
+  position: relative;
 }
