@@ -91,19 +91,19 @@ function Navbar() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Vision & Mission
+                  <a className="dropdown-item" href="/process">
+                    Investment Process
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/approach">
                     The Approach
                   </a>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/portfolio">
                 PORTFOLIO
               </Link>
             </li>
@@ -114,7 +114,7 @@ function Navbar() {
             </li>
           </ul>
           <div className="d-flex flex-column flex-lg-row gap-2">
-            <Link to="#" className="btn btn-primary">
+            <Link to="/contact" className="btn btn-primary">
               CONTACT US
             </Link>
           </div>

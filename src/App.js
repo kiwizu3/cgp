@@ -11,6 +11,10 @@ import Footer from './components/Footer';
 import AboutPage from './pages/AboutPage'; // Import your AboutPage here
 import './App.css';
 import Team from './components/Team';
+import OurApproach from './pages/OurApproach';
+import InvestmentProcess from './pages/InvestmentProcess';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -30,6 +34,11 @@ function App() {
             </>
           } />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/approach" element={<OurApproach />} />
+          <Route path="/process" element={<InvestmentProcess />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+
           {/* Add more routes as needed */}
         </Routes>
       </main>
