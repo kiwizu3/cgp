@@ -56,14 +56,14 @@ function Portfolio() {
             <div className="card h-100 shadow-sm">
               {project.image && (
                 <img
-                  src={project.image}
+                  src={`https://placehold.co/800/212121/FFF?text=${project.name}&font=Manrope`}
                   alt={project.name}
                   className="card-img-top"
                   style={{ objectFit: 'cover', height: '200px' }}
                 />
               )}
               <div className="card-body d-flex flex-column">
-                <h5 className="card-title">{project.name}</h5>
+                {/* <h5 className="card-title">{project.name}</h5> */}
                 <p className="card-text"><strong>Location:</strong> {project.location}</p>
                 <p className="card-text"><strong>Status:</strong> {project.status}</p>
                 <p className="card-text"><strong>Investment Opportunity:</strong> {project.opportunity}</p>

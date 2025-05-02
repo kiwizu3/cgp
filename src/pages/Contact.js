@@ -12,18 +12,34 @@ function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form Submitted:', form);
-    setSubmitted(true);
+  
+    try {
+      const response = await fetch("https://formspree.io/f/manoebwk", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+  
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Error submitting form.");
+    }
   };
-
   return (
     <div className="container py-5">
       <h1 className="text-center fw-bold mb-5">Contact Us</h1>
 
       {!submitted ? (
-        <form className="row g-4" onSubmit={handleSubmit}>
+        <form className="row g-4" onSubmit={handleSubmit} noValidate>
           <div className="col-md-6">
             <label htmlFor="fullName" className="form-label">Full Name</label>
             <input
@@ -65,7 +81,7 @@ function Contact() {
         </form>
       ) : (
         <div className="alert alert-success text-center" role="alert">
-          Thank you! We’ll get back to you shortly.
+          Thank you! We'll get back to you shortly.
         </div>
       )}
 
