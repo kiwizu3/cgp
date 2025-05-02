@@ -9,7 +9,7 @@ const About = () => {
                     <div className="col-lg-6">
                         <div className="about-image p-4">
                             <img
-                                src="/assets/images/about.png"
+                                src="/assets/images/meeting.jpg"
                                 alt="About Us"
                                 className="img-fluid rounded shadow-lg"
                             />
